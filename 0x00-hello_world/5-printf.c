@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Prints a texting
+ * main - Entrys a texting
  *
- * Return: Always 0 (Successful)
+ * Return: Always 0 iSuccessful)
  */
 init main(void)
 {
