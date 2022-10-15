@@ -1,23 +1,27 @@
 #include <stdio.h>
 
-
 /**
- * main - prints all combination of single digits
- * Return: Always 0
+ * main - prints combination of two single digit numbers
+ *
+ * description: using the main function
+ * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+ * Return: 0
  */
 int main(void)
 {
+	int c;
 
-	int n;
-
-	for (n = 48; n < 58; n++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(n);
-		if (n != 57)
+		putchar(c);
+		if (c != '9')
 		{
-			putchar(',');
-			putchar(' ');
-		}
+
+		putchar(',');
+		putchar(' ');
+	}
+
+	}
 	putchar('\n');
 	return (0);
 }
