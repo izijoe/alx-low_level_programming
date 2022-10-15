@@ -1,4 +1,1 @@
-ls
-not empty
-ls
-clear
+if else while project
