@@ -2,13 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 /**
- * main - print if the number is postive, zero, or negative
- *
- * Description: using the main function
- * this program prints programming is positive, zero, or negative
- * Return: Always 0 (success)
+ * main - Entry
+ * Return: Always 0
  */
 
 int main(void)
@@ -16,28 +12,26 @@ int main(void)
 {
 	int n;
 
-	int m;
+	int a;
 
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
+	a = n % 10;
 
-	1 <= n % 10;
-/* the code is down */
-
-	if (1 > 5)
+	if (a > 5)
 	{
-		printf("last digit of %d is %d and is greater than 5\n", n, 1);
+		printf("last digit of %d is %d and is greater than 5\n", n, a);
 	}
 
-	else if (1 == 0)
+	else if (a == 0)
 	{
-		printf("last digit of %d is %d and is 0\n", n, 1);
+		printf("last digit of %d is %d and is 0\n", n, a);
 	}
 
 	else
 	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, 1);
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, a);
 	}
 
 	return (0);
