@@ -3,7 +3,10 @@
 #include <time.h>
 
 /**
- * main - Entry
+ * main - print if the number is postive, zero, or negative
+ *
+ * Description: using the main function
+ * this program prints programming is positive, zero, or negative
  * Return: Always 0
  */
 
@@ -12,26 +15,26 @@ int main(void)
 {
 	int n;
 
-	int a;
+	int l;
 
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
-	a = n % 10;
+	l = n % 10;
+/* the code is down */
 
-	if (a > 5)
+	if (l > 5)
 	{
-		printf("last digit of %d is %d and is greater than 5\n", n, a);
+		printf("last digit of %d is %d and is greater than 5\n", n, l);
 	}
 
-	else if (a == 0)
+	else if (l == 0)
 	{
-		printf("last digit of %d is %d and is 0\n", n, a);
+		printf("last digit of %d is %d and is 0\n", n, l);
 	}
-
 	else
 	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, a);
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, l);
 	}
 
 	return (0);
