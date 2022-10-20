@@ -1,19 +1,22 @@
 #include "main.h"
 
 /**
- * _isalpha - function to checks if c is a letter, lowercase
+ * main - checks the code
  *
- * @c: is the int that will ise for the argument of the function
- * Description: using the _isalpha function
- * this program prints
- * Return: 0
+ * Return: Always 0
  */
-int _isalpha(int c)
+int main(void)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	{
-		return (1);
-	}
-	else
-		return (0);
+	int r;
+
+	r = _isalphabet('H');
+	_putchar(r + '0');
+	r = _isalphabet('o');
+	_putchar(r + '0');
+	r = _isalphabet(108);
+	_putchar(r + '0');
+	r = _isalphabet(';');
+	_putchar(r + '0');
+	_putchar('\n');
+	return (0);
 }
