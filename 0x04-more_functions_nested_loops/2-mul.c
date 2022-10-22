@@ -2,12 +2,11 @@
 
 /**
  * mul - multiply two integers
- * @a: first int
- * @b: second int
- * Return: the multiplication of a and b
+ * @a: first integer
+ * @b: second integer
+ * Return: addition of a and b
  */
-
 int mul(int a, int b)
 {
-	return (a + b);
+	return (a * b);
 }
