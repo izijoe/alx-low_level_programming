@@ -1,23 +1,16 @@
 #include "main.h"
 
 /**
- * helperfunction - checks if sqrt of number exist
- * @num: input number
- * @psqrt: possible sqrt of number
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to find sqrt of
  *
- * Return: squareroot of number or -1 for error
+ * Return: squareroot of n
+ * -1 is n does not have anatural sqrt
  */
-int helperfunction(int num, int psqrt)
+int _sqrt_recursion(int n)
 {
-	if ((psqrt * psqrt) == num)
-	{
-		return (psqrt);
-	}
+	if (n < 0)
+		return (-1);
 	else
-	{
-		if ((psqrt * psqrt) > num)
-			return (-1);
-		else
-			return (helperfunction(num, psqrt + 1));
-	}
+		return (helperfunction(n, 0));
 }
