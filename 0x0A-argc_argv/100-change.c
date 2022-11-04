@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 	/* convert string to int andcalculate coins */
 	n = atoi(argv[1]);
-	coins += n / 25
+	coins += n / 25;
 	n = n % 25;
 	coins += n / 10;
 	n = n % 10;
