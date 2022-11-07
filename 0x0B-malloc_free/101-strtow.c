@@ -74,7 +74,7 @@ char **strtow(char *str)
 			i += j;
 		}
 		else
-			1++;
+			i++;
 	}
 	return (w);
 }
