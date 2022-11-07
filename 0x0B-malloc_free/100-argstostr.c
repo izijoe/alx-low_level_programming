@@ -37,7 +37,7 @@ char *argtostr(int ac, char **av)
 	}
 
 	/* find length to malloc */
-		for (i = 0; < ac; i++)
+		for (i = 0; i < ac; i++)
 	{
 		for (i = 0; i < ac; i++)
 		{
