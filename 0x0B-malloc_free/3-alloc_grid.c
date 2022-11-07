@@ -5,7 +5,7 @@
 /**
  * **alloc_grid - function to allocate memory to grid
  * @width: int type
- * @hieght: int type
+ * @height: int type
  * Return: grid of 0s
  */
 
