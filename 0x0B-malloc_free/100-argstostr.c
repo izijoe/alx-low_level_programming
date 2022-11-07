@@ -26,7 +26,7 @@ int _strlen(char *s)
  * Return: arguments as strings
  */
 
-char *argtostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	char *s;
 	int len = 0, i, j, k = 0;
