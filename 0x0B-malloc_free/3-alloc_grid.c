@@ -9,7 +9,7 @@
  * Return: grid of 0s
  */
 
-int **alloc_grid(int width, int hieght)
+int **alloc_grid(int width, int height)
 {
 	int x, y;
 	int **ptr;
