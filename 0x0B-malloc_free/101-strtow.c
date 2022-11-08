@@ -3,11 +3,10 @@
 
 /**
  * wrdcnt - counts the number of words in a string
- * @s: string to count
+ * @s: strings to count
  *
- * Return: int of number of words
+ * Returnn: int of number of words
  */
-
 int wrdcnt(char *s)
 {
 	int i, n = 0;
@@ -32,15 +31,14 @@ int wrdcnt(char *s)
  *
  * Return: pointer to an array of strings
  */
-
 char **strtow(char *str)
 {
 	int i, j, k, l, n = 0, wc = 0;
-
 	char **w;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
+
 	n = wrdcnt(str);
 	if (n == 1)
 		return (NULL);
@@ -54,8 +52,7 @@ char **strtow(char *str)
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
 		{
 			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
-			;
-
+				;
 			j++;
 			w[wc] = (char *)malloc(j * sizeof(char));
 			j--;
@@ -67,7 +64,7 @@ char **strtow(char *str)
 				free(w);
 				return (NULL);
 			}
-			for (i = 0; 1 < j; l++)
+			for (l = 0; l < j; l++)
 				w[wc][1] = str[i + 1];
 			w[wc][1] = '\0';
 			wc++;
