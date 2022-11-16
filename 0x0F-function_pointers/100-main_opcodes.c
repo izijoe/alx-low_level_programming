@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 
 		if (index == bytes - 1)
 			continue;
-		prinf(" ");
+		printf(" ");
 		address++;
 	}
 
