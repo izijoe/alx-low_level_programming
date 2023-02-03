@@ -238,7 +238,7 @@ void shash_table_print(const shash_table_t *ht)
 	{
 		if (count > 0)
 			printf(", ");
-		printf("'%s': '%s'", node->, node->value);
+		printf("'%s': '%s'", node->key, node->value);
 		node = node->snext;
 		count++;
 	}
