@@ -1,22 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
- * dlistint_len - a function that counts the number of elements in
- * a dlistint list
- * @h: the head of the linked list
- *
- * Return: returns the number of elements
+ * dlistint_len - computes the length of the liked list..
+ * @h: a pointer to the list to iterato to.
+ * Return: the number of nodes
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	const dlistint_t *tmp = h;
+	const dlistint_t *tmp;
 	size_t i = 0;
 
+	tmp = h;
 	while (tmp)
 	{
 		i++;
 		tmp = tmp->next;
 	}
-
 	return (i);
 }
