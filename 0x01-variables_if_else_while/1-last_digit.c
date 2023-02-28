@@ -1,37 +1,32 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
- * main - print if the number is postive, zero, or negative
+ * main - Entry point
  *
- * Description: using the main function
- * this program prints programming is positive, zero, or negative
- * Return: Always 0
- */
+ * Description: print the value of n status:
+ *              greater than, is zero and is not less than 6.
+ *
+ * Return: Always O (Success)
+*/
+
 int main(void)
 {
-	int n;
-	int l;
+	int n, digit;
 
 	srand(time(0));
-
 	n = rand() - RAND_MAX / 2;
 
-	l = n % 10;
-/* the code is down */
+	/*my code*/
+	digit = n % 10; /*gets last digit*/
 
-	if (l > 5)
-	{
-		printf("last digit of %d is %d and is greater than 5\n", n, l);
-	}
-	else if (l == 0)
-	{
-		printf("last digit of %d is %d and is 0\n", n, l);
-	}
-	else
-	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, l);
-	}
+	if (digit > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, digit);
+	else if (digit == 0)
+		printf("Last digit of %i is %i and is 0\n", n, digit);
+	else if (digit < 6 && digit != 0)
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, digit);
+
 	return (0);
 }
